@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Tip calculator app</title>
+    <style>
+      body {
+        font-size: 24px;
+        background-color: rgb(155, 222, 248);
+      }
+      main {
+        padding-left: 350px;
+        padding-right: 200px;
+        padding-top: 100px;
+      }
+      .nav-logo {
+        display: flex;
+        justify-content: center;
+        margin-left: -40px;
+      }
+      section {
+        background-color: white;
+        border-radius: 25px;
+        margin-top: 50px;
+      }
+      .section-main-div {
+        display: flex;
+        justify-content: space-around;
+        padding: 50px;
+      }
+      .dollar {
+        width: 250px;
+        display: flex;
+        justify-content: space-between;
+        color: rgb(14, 160, 160);
+        border: none;
+        height: 35px;
+      }
+      .all-btn {
+        background-color: rgb(16, 64, 64);
+        color: White;
+        font-size: 20px;
+        border-radius: 7px;
+        width: 90px;
+        height: 40px;
+        margin-top: 10px;
+      }
+      .c-btn {
+        background-color: rgb(114, 236, 236);
+        color: darkcyan;
+        font-size: 20px;
+        border-radius: 7px;
+        width: 90px;
+        height: 40px;
+        margin-top: 10px;
+        border: none;
+      }
+      .all-btn-div {
+        width: 300px;
+      }
+      .green-box {
+        background-color: rgb(4, 60, 60);
+        color: white;
+        border-radius: 20px;
+        width: 400px;
+      }
+      .sec-inside-box {
+        padding: 20px 40px;
+      }
+      .person {
+        width: 250px;
+        display: flex;
+        justify-content: space-between;
+        color: rgb(14, 160, 160);
+        border: none;
+        height: 35px;
+      }
+      .para {
+        width: 150px;
+      }
+      .span {
+        font-size: 14px;
+      }
+      .reset-btn {
+        color: rgb(10, 82, 82);
+        background-color: rgb(14, 160, 160);
+        border: none;
+        width: 350px;
+        height: 35px;
+        border-radius: 5px;
+        margin-top: 150px;
+        margin-left: -15px;
+      }
+      .hh {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+        font-size: 15px;
+      }
+      .small {
+        font-size: 10px;
+        color: rgb(14, 160, 160);
+      }
+      .number {
+        font-size: 35px;
+        color: rgb(14, 160, 160);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <nav class="nav-logo">
+        <img src="logo.svg" />
+      </nav>
+      <section>
+        <div class="section-main-div">
+          <div class="f-box">
+            <p>Bill</p>
+            <div>
+              <button class="dollar"><img src="icon-dollar.svg" />0</button>
+            </div>
+            <div class="all-btn-div">
+              <p>Select tip %</p>
+              <button class="all-btn">5%</button>
+              <button class="all-btn">10%</button>
+              <button class="all-btn">15%</button><br />
+              <button class="all-btn">25%</button>
+              <button class="all-btn">50%</button>
+              <button class="c-btn">custom</button>
+            </div>
+            <div>
+              <p>Number of people</p>
+              <div>
+                <button class="person"><img src="icon-person.svg" />0</button>
+              </div>
+            </div>
+          </div>
+          <div class="green-box">
+            <div class="sec-inside-box">
+              <div class="hh">
+                <div>
+                  <div>Tip Amount</div>
+                  <div class="small">/person</div>
+                </div>
+                <div class="number">$0.00</div>
+              </div>
+              <div class="hh">
+                <div>
+                  <div>Total</div>
+                  <div class="small">/person</div>
+                </div>
+                <div class="number">$0.00</div>
+              </div>
+              <div>
+                <button class="reset-btn">RESET</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
